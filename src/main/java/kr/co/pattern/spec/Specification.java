@@ -1,8 +1,8 @@
 package kr.co.pattern.spec;
 
 public interface Specification<T> {
-    Specification<T> and(Specification<T> other);
-    Specification<T> or(Specification<T> other);
-    Specification<T> not();
+    Specification and(Specification other);
+    Specification or(Specification other);
+    Specification not();
     boolean isSatisfiedBy(T candidate);
 }
