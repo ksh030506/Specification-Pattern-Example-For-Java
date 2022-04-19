@@ -1,8 +1,6 @@
 package kr.co.pattern;
 
-import kr.co.pattern.spec.AbstractSpecification;
 import kr.co.pattern.spec.AndSpecification;
-import kr.co.pattern.spec.Specification;
 import kr.co.pattern.spec.custom.PersonAgeSpecification;
 import kr.co.pattern.spec.custom.PersonNameSpecification;
 
@@ -16,7 +14,5 @@ public class MainClass {
         boolean satisfiedBy2 = andSpecification.isSatisfiedBy(woman);
         System.out.println("satisfiedBy1 = " + satisfiedBy1);
         System.out.println("satisfiedBy2 = " + satisfiedBy2);
-
-
     }
 }
